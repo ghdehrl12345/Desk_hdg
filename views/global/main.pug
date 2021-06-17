@@ -1,0 +1,26 @@
+extends ../globalBase.pug
+
+block content
+    section.main    
+        h1 Welcome, desk Information System (dogi Version)
+
+        p #{errorMsg}
+
+        form(action="/result" method="GET")
+            select(name="c")
+                option(value=false) --선택--
+                option(value="검정색") 검정색
+                option(value="흰색") 흰색
+                option(value="파란색") 파란색
+            select(name="h")
+                option(value=false) --선택--
+                option(value="120") 120
+                option(value="190") 190
+                option(value="90") 90
+
+            select(name="w")
+                option(value=false) --선택--
+                option(value="180") 180
+                option(value="110") 110
+                option(value="200") 200
+            input(type="submit" value="조회") 
