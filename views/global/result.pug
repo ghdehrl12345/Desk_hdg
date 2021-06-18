@@ -1,9 +1,9 @@
-extends ../globalBase.pug
+extends ../base.pug
 
 block content
     for desk in list
-    h1 #{desk.color}
-    h1 #{desk.height}
-    h1 #{desk.weight}
-    hr
+        h1 #{desk.color}
+        h1 #{desk.height}cm
+        h1 #{desk.weight}cm
+        hr
     

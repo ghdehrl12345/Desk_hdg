@@ -1,12 +1,10 @@
-extends ../globalBase.pug
+extends ../base.pug
 
 block content
-    section.main    
-        h1 Welcome, desk Information System (dogi Version)
-
+    
         p #{errorMsg}
 
-        form(action="/result" method="GET")
+        form(action="/result" method="get")
             select(name="c")
                 option(value=false) --선택--
                 option(value="검정색") 검정색
